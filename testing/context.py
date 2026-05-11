@@ -4,7 +4,7 @@ from tempfile import TemporaryDirectory
 from typing import Callable
 
 import polars as pl
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 from analyzer_interface import ParamValue, SecondaryAnalyzerInterface
 from analyzer_interface.context import AssetsReader, InputTableReader
@@ -72,8 +72,7 @@ class TestSecondaryAnalyzerContext(BaseSecondaryAnalyzerContext):
     primary_param_values: dict[str, ParamValue]
     progress_reporter: Callable[[str], ProgressReporterProtocol] | None = None
 
-    class Config:
-        arbitrary_types_allowed = True
+    model_config = ConfigDict(arbitrary_types_allowed=True)
 
     @cached_property
     def base(self) -> AssetsReader:

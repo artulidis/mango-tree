@@ -108,5 +108,4 @@ class UserInputColumn(BaseUserInputColumn):
     def apply_semantic_transform(self):
         return self.semantic.try_convert(self.data)
 
-    class Config:
-        arbitrary_types_allowed = True
+    model_config = ConfigDict(arbitrary_types_allowed=True)
