@@ -444,7 +444,15 @@ def server(input, output, sessions):
         if has_click:
             # Show individual posts for clicked n-gram
             data_for_display = get_filtered_full_data()
-            return render.DataGrid(data_for_display, width="100%")
+
+            column_sizing = [
+                {"cols": [0], "style": {"width": "20%"}},
+                {"cols": [1], "style": {"width": "25%"}},
+                {"cols": [2], "style": {"width": "35%"}},
+                {"cols": [3], "style": {"width": "20%"}}
+            ]
+
+            return render.DataGrid(data_for_display, styles=column_sizing, width="100%")
 
         # No click: show n-gram statistics (top 100)
         if has_search:
