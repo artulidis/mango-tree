@@ -23,6 +23,8 @@ if site_packages_path is None:
 a = Analysis(
     ['cibmangotree_gui.py'],  # GUI entry point
     pathex=['.'],    # Ensure all paths are correctly included
+    ['src/cibmangotree/__main__.py'],  # Entry point
+    pathex=['.', 'src'],    # Ensure all paths are correctly included
     binaries=[],
     datas=[
         # version file, if defined
@@ -49,6 +51,8 @@ a = Analysis(
         # NiceGUI static files (required for GUI mode)
         (os.path.join(site_packages_path, 'nicegui'), 'nicegui')
         # Note: pywebview data files are handled by pywebview's built-in pyinstaller hook
+        ('./src/cibmangotree/app/web_static', 'app/web_static'),
+        ('./src/cibmangotree/app/web_templates', 'app/web_templates')
     ],
     hiddenimports=[
         'readchar',

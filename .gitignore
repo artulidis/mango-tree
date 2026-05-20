@@ -17,3 +17,4 @@ node_modules
 
 # cursor
 ./gui/.cursor 
+*.egg-info

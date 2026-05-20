@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Validate version matches tag
         run: |
@@ -29,17 +29,21 @@ jobs:
     secrets: inherit
     with:
       is_release: true
+  call-docs:
+    needs: validate-version
+    uses: ./.github/workflows/docs.yml
+    secrets: inherit
   release:
     needs: call-build_exe
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: artifacts
 
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         if: github.ref_type == 'tag'
         with:
           files: |
