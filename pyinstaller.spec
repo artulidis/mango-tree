@@ -86,7 +86,7 @@ a = Analysis(
         'mdurl',
         'uc_micro',
         'pythonjsonlogger',
-        'pythonjsonlogger.jsonlogger',
+        'pythonjsonlogger.json',
         # NiceGUI and pywebview (required for GUI mode)
         'nicegui',
         'nicegui.elements',
