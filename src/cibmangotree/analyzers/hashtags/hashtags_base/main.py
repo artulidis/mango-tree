@@ -2,8 +2,10 @@ from itertools import accumulate
 
 import polars as pl
 
-from cibmangotree.analyzer_interface.context import PrimaryAnalyzerContext
-from cibmangotree.terminal_tools import ProgressReporter
+from cibmangotree.analyzer_interface.context import (
+    NullProgressReporter,
+    PrimaryAnalyzerContext,
+)
 
 from .interface import (
     COL_AUTHOR_ID,
@@ -42,7 +44,9 @@ def gini(x: pl.Series) -> float:
     return (n + 1 - 2 * sum(cumx) / cumx[-1]) / n
 
 
-def hashtag_analysis(data_frame: pl.DataFrame, progress, every="1h") -> pl.DataFrame:
+def hashtag_analysis(
+    data_frame: pl.DataFrame, every="1h", progress=NullProgressReporter
+) -> pl.DataFrame:
     if not isinstance(data_frame.schema[COL_TIME], pl.Datetime):
         data_frame = data_frame.with_columns(
             pl.col(COL_TIME).str.to_datetime().alias(COL_TIME)

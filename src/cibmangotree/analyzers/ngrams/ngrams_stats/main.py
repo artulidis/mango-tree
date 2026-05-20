@@ -2,7 +2,10 @@ import polars as pl
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-from cibmangotree.analyzer_interface.context import SecondaryAnalyzerContext
+from cibmangotree.analyzer_interface.context import (
+    NullProgressReporter,
+    SecondaryAnalyzerContext,
+)
 from cibmangotree.terminal_tools import ProgressReporter
 
 from ..ngrams_base.interface import (
