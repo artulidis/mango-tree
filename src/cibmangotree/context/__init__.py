@@ -21,6 +21,9 @@ from cibmangotree.analyzer_interface.context import (
     PrimaryAnalyzerContext as BasePrimaryAnalyzerContext,
 )
 from cibmangotree.analyzer_interface.context import (
+    ProgressReporterProtocol,
+)
+from cibmangotree.analyzer_interface.context import (
     SecondaryAnalyzerContext as BaseSecondaryAnalyzerContext,
 )
 from cibmangotree.analyzer_interface.context import (

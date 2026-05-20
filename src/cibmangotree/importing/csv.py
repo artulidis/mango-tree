@@ -3,10 +3,7 @@ from csv import Sniffer
 from io import BytesIO
 
 import polars as pl
-from pydantic import BaseModel
-
-import cibmangotree.terminal_tools.prompts as prompts
-from cibmangotree.terminal_tools.utils import print_message, smart_print_data_frame
+from pydantic import BaseModel, ConfigDict
 
 from .importer import Importer, ImporterSession
 

@@ -3,10 +3,7 @@ from typing import cast
 
 import polars as pl
 from fastexcel import read_excel
-from pydantic import BaseModel
-
-import cibmangotree.terminal_tools.prompts as prompts
-from cibmangotree.terminal_tools.utils import wait_for_key
+from pydantic import BaseModel, ConfigDict
 
 from .importer import Importer, ImporterSession
 
