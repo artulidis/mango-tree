@@ -2,7 +2,7 @@ from datetime import datetime
 
 from nicegui import ui
 
-from app.analysis_context import AnalysisContext
+from cibmangotree.app.analysis_context import AnalysisContext
 from gui.base import GuiPage
 from gui.components.analysis_utils import present_timestamp
 from gui.components.manage_analyses import ManageAnalysisDialog

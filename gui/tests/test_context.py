@@ -2,7 +2,7 @@
 
 from unittest.mock import MagicMock
 
-from app import App
+from cibmangotree.app import App
 from gui.context import GUIContext
 
 

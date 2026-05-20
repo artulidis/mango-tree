@@ -4,7 +4,7 @@ GUI context - similar to ViewContext but for NiceGUI.
 
 from pydantic import BaseModel, ConfigDict
 
-from app import App
+from cibmangotree.app import App
 
 
 class GUIContext(BaseModel):

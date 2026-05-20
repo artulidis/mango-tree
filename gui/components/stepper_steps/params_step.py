@@ -2,7 +2,10 @@ from tempfile import TemporaryDirectory
 
 from nicegui import ui
 
-from context import InputColumnProvider, PrimaryAnalyzerDefaultParametersContext
+from cibmangotree.context import (
+    InputColumnProvider,
+    PrimaryAnalyzerDefaultParametersContext,
+)
 from gui.components import AnalysisParamsCard
 from gui.session import GuiSession
 

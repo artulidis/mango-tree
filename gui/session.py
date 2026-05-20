@@ -3,11 +3,11 @@ from pathlib import Path
 
 from pydantic import BaseModel, ConfigDict
 
-from analyzer_interface import AnalyzerInterface, ParamValue
-from app.project_context import ProjectContext
+from cibmangotree.analyzer_interface import AnalyzerInterface, ParamValue
+from cibmangotree.app.project_context import ProjectContext
+from cibmangotree.importing.importer import ImporterSession
+from cibmangotree.storage import AnalysisModel
 from gui.context import GUIContext
-from importing.importer import ImporterSession
-from storage import AnalysisModel
 
 
 # Class for handling information that

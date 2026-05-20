@@ -10,8 +10,8 @@ from typing import Callable
 
 from nicegui import ui
 
-from importing.csv import CsvImportSession
-from importing.excel import ExcelImportSession
+from cibmangotree.importing.csv import CsvImportSession
+from cibmangotree.importing.excel import ExcelImportSession
 
 
 class ImportOptionsDialog(ui.dialog):

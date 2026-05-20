@@ -8,7 +8,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from app import App
+from cibmangotree.app import App
 from gui.context import GUIContext
 from gui.session import GuiSession
 

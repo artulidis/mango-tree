@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from app.analysis_context import AnalysisContext
+from cibmangotree.app.analysis_context import AnalysisContext
 
 
 def analysis_label(analysis: AnalysisContext, now: datetime) -> str:

@@ -5,8 +5,8 @@ from io import BytesIO
 from nicegui import ui
 from nicegui.testing import User
 
+from cibmangotree.importing.csv import CsvImportSession
 from gui.components.import_options import ImportOptionsDialog
-from importing.csv import CsvImportSession
 
 
 async def test_import_options_dialog_builds_csv_controls(user: User) -> None:

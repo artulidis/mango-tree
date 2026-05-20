@@ -4,7 +4,7 @@ Main GUI workflow including all pages.
 
 from nicegui import ui
 
-from app import App
+from cibmangotree.app import App
 from gui.context import GUIContext
 from gui.dashboards import PlaceholderDashboard, get_dashboard
 from gui.pages import (

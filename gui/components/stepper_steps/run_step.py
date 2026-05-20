@@ -5,7 +5,7 @@ from traceback import format_exc
 
 from nicegui import run, ui
 
-from app.analysis_context import AnalysisContext, AnalysisQueueMessage
+from cibmangotree.app.analysis_context import AnalysisContext, AnalysisQueueMessage
 from gui.base import GuiPage
 from gui.routes import gui_routes
 from gui.session import GuiSession

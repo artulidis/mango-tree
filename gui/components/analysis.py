@@ -1,6 +1,11 @@
 from nicegui import ui
 
-from analyzer_interface import AnalyzerParam, IntegerParam, ParamValue, TimeBinningValue
+from cibmangotree.analyzer_interface import (
+    AnalyzerParam,
+    IntegerParam,
+    ParamValue,
+    TimeBinningValue,
+)
 
 
 class AnalysisParamsCard:
