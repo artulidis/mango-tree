@@ -9,7 +9,7 @@ from datetime import datetime
 
 import polars as pl
 
-from analyzers.hashtags.hashtags_base.interface import (
+from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
     OUTPUT_COL_GINI,
     OUTPUT_COL_TIMESPAN,
     PRIMARY_OUTPUT_DATETIME_FORMAT,

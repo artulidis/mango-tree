@@ -8,7 +8,7 @@ Provides functions to:
 
 import polars as pl
 
-from analyzers.ngrams.ngrams_stats.interface import (
+from cibmangotree.analyzers.ngrams.ngrams_stats.interface import (
     COL_AUTHOR_ID,
     COL_MESSAGE_TEXT,
     COL_MESSAGE_TIMESTAMP,

@@ -9,12 +9,14 @@ a point filters the data grid to show all occurrences of that n-gram.
 import polars as pl
 from nicegui import run, ui
 
-from analyzers.ngrams.ngrams_stats.interface import (
+from cibmangotree.analyzers.ngrams.ngrams_stats.interface import (
     COL_NGRAM_WORDS,
     OUTPUT_NGRAM_FULL,
     OUTPUT_NGRAM_STATS,
 )
-from analyzers.ngrams.ngrams_stats.interface import interface as ngram_stats_interface
+from cibmangotree.analyzers.ngrams.ngrams_stats.interface import (
+    interface as ngram_stats_interface,
+)
 from gui.session import GuiSession
 
 from ..base_dashboard import BaseDashboardPage
@@ -388,15 +390,13 @@ class NgramsDashboardPage(BaseDashboardPage):
         self._chart.update()
 
     def render_content(self) -> None:
-        ui.add_css(
-            """
+        ui.add_css("""
             .ag-tooltip {
                 white-space: normal !important;
                 max-width: 450px !important;
                 word-wrap: break-word !important;
             }
-        """
-        )
+        """)
         with ui.row().classes("w-full justify-center"):
             with ui.column().classes("w-3/4 q-pa-md gap-4"):
                 with ui.card().classes("w-full"):

@@ -13,7 +13,7 @@ from datetime import datetime
 import polars as pl
 from nicegui import run, ui
 
-from analyzers.hashtags.hashtags_base.interface import (
+from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
     COL_AUTHOR_ID,
     COL_POST,
     COL_TIME,
@@ -23,7 +23,7 @@ from analyzers.hashtags.hashtags_base.interface import (
     SECONDARY_COL_HASHTAG_PERC,
     SECONDARY_COL_USERS_ALL,
 )
-from analyzers.hashtags.hashtags_web.analysis import secondary_analyzer
+from cibmangotree.analyzers.hashtags.hashtags_web.analysis import secondary_analyzer
 from gui.session import GuiSession
 
 from ..base_dashboard import BaseDashboardPage
@@ -515,16 +515,14 @@ class HashtagsDashboardPage(BaseDashboardPage):
         )
 
     def render_content(self) -> None:
-        ui.add_css(
-            """
+        ui.add_css("""
             .ag-row {
                 cursor: pointer !important;
             }
             .ag-row-hover {
                 background-color: #e3f2fd !important;
             }
-            """
-        )
+            """)
         with ui.row().classes("w-full justify-center"):
             with ui.column().classes("w-3/4 q-pa-md gap-4"):
                 with ui.card().classes("w-full"):

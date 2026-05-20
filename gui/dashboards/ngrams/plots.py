@@ -9,8 +9,11 @@ import numpy as np
 import polars as pl
 from pydantic import BaseModel
 
-from analyzers.ngrams.ngrams_base.interface import COL_NGRAM_ID, COL_NGRAM_LENGTH
-from analyzers.ngrams.ngrams_stats.interface import (
+from cibmangotree.analyzers.ngrams.ngrams_base.interface import (
+    COL_NGRAM_ID,
+    COL_NGRAM_LENGTH,
+)
+from cibmangotree.analyzers.ngrams.ngrams_stats.interface import (
     COL_NGRAM_DISTINCT_POSTER_COUNT,
     COL_NGRAM_TOTAL_REPS,
     COL_NGRAM_WORDS,

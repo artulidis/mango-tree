@@ -9,14 +9,14 @@ Provides functions to:
 from datetime import datetime
 
 import polars as pl
-from analyzers.hashtags.hashtags_base.interface import (
+
+from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
     COL_TIME,
     OUTPUT_COL_HASHTAGS,
     PRIMARY_OUTPUT_DATETIME_FORMAT,
     SECONDARY_COL_USERS_ALL,
 )
-from analyzers.hashtags.hashtags_web.analysis import secondary_analyzer
-
+from cibmangotree.analyzers.hashtags.hashtags_web.analysis import secondary_analyzer
 from cibmangotree.app.project_context import _get_columns_with_semantic
 from gui.session import GuiSession
 
@@ -92,7 +92,7 @@ def load_primary_output(session: GuiSession) -> pl.DataFrame:
     Returns:
         DataFrame with timewindow_start as datetime column.
     """
-    from analyzers.hashtags.hashtags_base.interface import (
+    from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
         OUTPUT_COL_TIMESPAN,
         OUTPUT_GINI,
     )
