@@ -7,7 +7,6 @@ a point filters the data grid to show all occurrences of that n-gram.
 """
 
 import polars as pl
-from gui.session import GuiSession
 from nicegui import run, ui
 
 from cibmangotree.analyzers.ngrams.ngrams_stats.interface import (
@@ -18,6 +17,7 @@ from cibmangotree.analyzers.ngrams.ngrams_stats.interface import (
 from cibmangotree.analyzers.ngrams.ngrams_stats.interface import (
     interface as ngram_stats_interface,
 )
+from cibmangotree.gui.session import GuiSession
 
 from ..base_dashboard import BaseDashboardPage
 from .data import filter_ngrams_by_text, make_detail_columns, make_summary_columns

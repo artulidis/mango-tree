@@ -1,7 +1,8 @@
-from gui.base import GuiPage
-from gui.routes import gui_routes
-from gui.session import GuiSession
 from nicegui import ui
+
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 
 
 class StartPage(GuiPage):

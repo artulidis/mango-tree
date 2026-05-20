@@ -1,8 +1,9 @@
 """Behavior tests for gui.components.choice_fork."""
 
-from gui.components.choice_fork import two_button_choice_fork_content
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.choice_fork import two_button_choice_fork_content
 
 
 async def test_two_button_choice_fork_renders_prompt(user: User) -> None:

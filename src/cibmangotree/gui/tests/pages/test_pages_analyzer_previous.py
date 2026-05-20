@@ -1,9 +1,10 @@
 """Behavior tests for gui.pages.analyzer_previous.SelectPreviousAnalyzerPage."""
 
-from gui.pages.analyzer_previous import SelectPreviousAnalyzerPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.analyzer_previous import SelectPreviousAnalyzerPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_previous_analyzer_empty_state(

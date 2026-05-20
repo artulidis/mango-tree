@@ -1,11 +1,11 @@
 import polars as pl
-from gui.session import GuiSession
 from nicegui import ui
 
 from cibmangotree.analyzer_interface import (
     column_automap,
     get_data_type_compatibility_score,
 )
+from cibmangotree.gui.session import GuiSession
 
 
 class ColumnMappingStep:

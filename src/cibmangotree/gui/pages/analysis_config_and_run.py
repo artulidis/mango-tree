@@ -1,15 +1,16 @@
 from typing import Any
 
-from gui.base import GuiPage
-from gui.components.stepper_steps import (
+from nicegui import ui
+
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.components.stepper_steps import (
     AnalyzerSelectionStep,
     ColumnMappingStep,
     ParamsConfigStep,
     RunAnalysisStep,
 )
-from gui.routes import gui_routes
-from gui.session import GuiSession
-from nicegui import ui
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 
 STEP_NAMES = {
     "Select Analyzer": "analyzer",

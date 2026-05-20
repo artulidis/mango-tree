@@ -1,11 +1,11 @@
 from io import BytesIO
 from pathlib import Path
 
-from gui.context import GUIContext
 from pydantic import BaseModel, ConfigDict
 
 from cibmangotree.analyzer_interface import AnalyzerInterface, ParamValue
 from cibmangotree.app.project_context import ProjectContext
+from cibmangotree.gui.context import GUIContext
 from cibmangotree.importing.importer import ImporterSession
 from cibmangotree.storage import AnalysisModel
 

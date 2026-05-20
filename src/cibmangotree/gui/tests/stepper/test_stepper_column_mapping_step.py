@@ -1,9 +1,12 @@
 """Behavior tests for gui.components.stepper_steps.column_mapping_step.ColumnMappingStep."""
 
-from gui.components.stepper_steps.column_mapping_step import ColumnMappingStep
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.stepper_steps.column_mapping_step import (
+    ColumnMappingStep,
+)
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_column_mapping_prompts_when_no_analyzer(

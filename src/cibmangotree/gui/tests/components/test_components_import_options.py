@@ -2,10 +2,10 @@
 
 from io import BytesIO
 
-from gui.components.import_options import ImportOptionsDialog
 from nicegui import ui
 from nicegui.testing import User
 
+from cibmangotree.gui.components.import_options import ImportOptionsDialog
 from cibmangotree.importing.csv import CsvImportSession
 
 

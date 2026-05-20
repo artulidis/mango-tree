@@ -4,8 +4,8 @@ from io import BytesIO
 from pathlib import Path
 from unittest.mock import MagicMock
 
-from gui.context import GUIContext
-from gui.session import GuiSession
+from cibmangotree.gui.context import GUIContext
+from cibmangotree.gui.session import GuiSession
 
 
 def test_reset_project_workflow_clears_project_import_fields(

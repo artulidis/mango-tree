@@ -11,12 +11,12 @@ if __name__ == "__main__":
     freeze_support()
 
     # Import heavy modules after loading message
-    from analyzers import suite
-    from app import App, AppContext
-    from app.logger import setup_logging
-    from gui import gui_main
-    from meta import get_version
-    from storage import Storage
+    from cibmangotree.analyzers import suite
+    from cibmangotree.app import App, AppContext
+    from cibmangotree.app.logger import setup_logging
+    from cibmangotree.gui import gui_main
+    from cibmangotree.meta import get_version
+    from cibmangotree.storage import Storage
 
     # Initialize storage
     storage = Storage(app_name="MangoTango", app_author="Civic Tech DC")

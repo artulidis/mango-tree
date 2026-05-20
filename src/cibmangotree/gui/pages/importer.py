@@ -1,11 +1,12 @@
 from io import BytesIO
 
 from fastapi import UploadFile
-from gui.base import GuiPage
-from gui.components import UploadButton
-from gui.routes import gui_routes
-from gui.session import GuiSession
 from nicegui import ui
+
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.components import UploadButton
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 
 
 class ImportDatasetPage(GuiPage):

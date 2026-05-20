@@ -1,9 +1,10 @@
 """Behavior tests for gui.components.manage_projects.ManageProjectsDialog."""
 
-from gui.components.manage_projects import ManageProjectsDialog
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.manage_projects import ManageProjectsDialog
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_manage_projects_empty_state(user: User, gui_session: GuiSession) -> None:

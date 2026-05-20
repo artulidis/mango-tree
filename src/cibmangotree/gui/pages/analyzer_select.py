@@ -1,7 +1,7 @@
-from gui.base import GuiPage
-from gui.components.choice_fork import two_button_choice_fork_content
-from gui.routes import gui_routes
-from gui.session import GuiSession
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.components.choice_fork import two_button_choice_fork_content
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 
 
 class SelectAnalyzerForkPage(GuiPage):

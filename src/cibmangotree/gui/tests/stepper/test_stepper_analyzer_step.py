@@ -1,9 +1,12 @@
 """Behavior tests for gui.components.stepper_steps.analyzer_step.AnalyzerSelectionStep."""
 
-from gui.components.stepper_steps.analyzer_step import AnalyzerSelectionStep
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.stepper_steps.analyzer_step import (
+    AnalyzerSelectionStep,
+)
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_analyzer_selection_empty_suite_message(

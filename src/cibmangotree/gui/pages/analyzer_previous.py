@@ -1,13 +1,13 @@
 from datetime import datetime
 
-from gui.base import GuiPage
-from gui.components.analysis_utils import present_timestamp
-from gui.components.manage_analyses import ManageAnalysisDialog
-from gui.routes import gui_routes
-from gui.session import GuiSession
 from nicegui import ui
 
 from cibmangotree.app.analysis_context import AnalysisContext
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.components.analysis_utils import present_timestamp
+from cibmangotree.gui.components.manage_analyses import ManageAnalysisDialog
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 
 
 class SelectPreviousAnalyzerPage(GuiPage):

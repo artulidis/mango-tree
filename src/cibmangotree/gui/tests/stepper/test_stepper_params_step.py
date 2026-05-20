@@ -2,10 +2,11 @@
 
 from unittest.mock import MagicMock
 
-from gui.components.stepper_steps.params_step import ParamsConfigStep
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.stepper_steps.params_step import ParamsConfigStep
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_params_step_no_params_message(

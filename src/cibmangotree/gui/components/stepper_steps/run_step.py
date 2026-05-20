@@ -3,13 +3,13 @@ from multiprocessing import Manager
 from queue import Empty
 from traceback import format_exc
 
-from gui.base import GuiPage
-from gui.routes import gui_routes
-from gui.session import GuiSession
-from gui.theme import MANGO_DARK_GREEN, MANGO_ORANGE
 from nicegui import run, ui
 
 from cibmangotree.app.analysis_context import AnalysisContext, AnalysisQueueMessage
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
+from cibmangotree.gui.theme import MANGO_DARK_GREEN, MANGO_ORANGE
 
 QUEUE_POLL_INTERVAL = 0.05
 

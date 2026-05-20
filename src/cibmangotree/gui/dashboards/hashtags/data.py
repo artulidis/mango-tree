@@ -9,7 +9,6 @@ Provides functions to:
 from datetime import datetime
 
 import polars as pl
-from gui.session import GuiSession
 
 from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
     COL_TIME,
@@ -19,6 +18,7 @@ from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
 )
 from cibmangotree.analyzers.hashtags.hashtags_web.analysis import secondary_analyzer
 from cibmangotree.app.project_context import _get_columns_with_semantic
+from cibmangotree.gui.session import GuiSession
 
 DISPLAY_DATE_FORMAT = "%B %d, %Y %H:%M"
 

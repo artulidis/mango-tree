@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from gui.components.analysis_utils import present_timestamp
-from gui.session import GuiSession
 from nicegui import ui
 
 from cibmangotree.app.analysis_context import AnalysisContext
+from cibmangotree.gui.components.analysis_utils import present_timestamp
+from cibmangotree.gui.session import GuiSession
 
 
 class ManageAnalysisDialog(ui.dialog):

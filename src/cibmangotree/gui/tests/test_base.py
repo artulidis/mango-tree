@@ -1,9 +1,10 @@
 """Behavior tests for gui.base utilities and GuiPage scaffolding."""
 
-from gui.base import GuiPage, format_file_size, present_separator
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.base import GuiPage, format_file_size, present_separator
+from cibmangotree.gui.session import GuiSession
 
 
 def test_format_file_size_kb_and_mb() -> None:

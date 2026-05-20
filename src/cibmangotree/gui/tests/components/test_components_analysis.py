@@ -1,8 +1,9 @@
 """Behavior tests for gui.components.analysis.AnalysisParamsCard."""
 
-from gui.components.analysis import AnalysisParamsCard
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.analysis import AnalysisParamsCard
 
 
 async def test_analysis_params_card_empty_shows_message(user: User) -> None:

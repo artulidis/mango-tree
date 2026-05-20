@@ -2,9 +2,12 @@
 Main GUI workflow including all pages.
 """
 
-from gui.context import GUIContext
-from gui.dashboards import PlaceholderDashboard, get_dashboard
-from gui.pages import (
+from nicegui import ui
+
+from cibmangotree.app import App
+from cibmangotree.gui.context import GUIContext
+from cibmangotree.gui.dashboards import PlaceholderDashboard, get_dashboard
+from cibmangotree.gui.pages import (
     AnalysisConfigAndRunPage,
     ImportDatasetPage,
     NewProjectPage,
@@ -15,11 +18,8 @@ from gui.pages import (
     SelectProjectPage,
     StartPage,
 )
-from gui.routes import gui_routes
-from gui.session import GuiSession
-from nicegui import ui
-
-from cibmangotree.app import App
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 
 
 # maing GUI entry point

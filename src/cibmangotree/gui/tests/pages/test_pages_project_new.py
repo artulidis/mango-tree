@@ -1,9 +1,10 @@
 """Behavior tests for gui.pages.project_new.NewProjectPage."""
 
-from gui.pages.project_new import NewProjectPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.project_new import NewProjectPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_new_project_empty_name_shows_warning(

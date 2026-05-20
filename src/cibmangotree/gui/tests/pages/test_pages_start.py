@@ -1,9 +1,10 @@
 """Behavior tests for gui.pages.start.StartPage."""
 
-from gui.pages.start import StartPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.start import StartPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_start_page_shows_primary_actions(

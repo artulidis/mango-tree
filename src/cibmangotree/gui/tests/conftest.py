@@ -7,10 +7,10 @@ from __future__ import annotations
 from unittest.mock import MagicMock
 
 import pytest
-from gui.context import GUIContext
-from gui.session import GuiSession
 
 from cibmangotree.app import App
+from cibmangotree.gui.context import GUIContext
+from cibmangotree.gui.session import GuiSession
 
 
 @pytest.fixture

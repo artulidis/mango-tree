@@ -1,8 +1,9 @@
 """Behavior tests for gui.components.toggle.ToggleButtonGroup."""
 
-from gui.components.toggle import ToggleButtonGroup
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.toggle import ToggleButtonGroup
 
 
 async def test_toggle_group_renders_buttons(user: User) -> None:

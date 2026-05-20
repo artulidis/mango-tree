@@ -1,5 +1,6 @@
-from gui.session import GuiSession
 from nicegui import ui
+
+from cibmangotree.gui.session import GuiSession
 
 
 class ManageProjectsDialog(ui.dialog):

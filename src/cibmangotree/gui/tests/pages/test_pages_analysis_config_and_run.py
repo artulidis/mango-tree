@@ -1,9 +1,10 @@
 """Behavior tests for gui.pages.analysis_config_and_run.AnalysisConfigAndRunPage."""
 
-from gui.pages.analysis_config_and_run import AnalysisConfigAndRunPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.analysis_config_and_run import AnalysisConfigAndRunPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_analysis_config_requires_project(

@@ -11,7 +11,6 @@ Layout:
 from datetime import datetime
 
 import polars as pl
-from gui.session import GuiSession
 from nicegui import run, ui
 
 from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
@@ -25,6 +24,7 @@ from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
     SECONDARY_COL_USERS_ALL,
 )
 from cibmangotree.analyzers.hashtags.hashtags_web.analysis import secondary_analyzer
+from cibmangotree.gui.session import GuiSession
 
 from ..base_dashboard import BaseDashboardPage
 from .data import (

@@ -14,10 +14,11 @@ import abc
 from collections.abc import Callable
 from typing import TYPE_CHECKING
 
-from gui.base import GuiPage
-from gui.routes import gui_routes
-from gui.session import GuiSession
 from nicegui import run, ui
+
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 
 if TYPE_CHECKING:
     import polars as pl

@@ -1,6 +1,6 @@
 """Behavior tests for gui.theme brand constants."""
 
-from gui.theme import (
+from cibmangotree.gui.theme import (
     ACCENT,
     MANGO_DARK_GREEN,
     MANGO_ORANGE,

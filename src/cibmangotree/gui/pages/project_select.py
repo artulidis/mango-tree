@@ -1,7 +1,8 @@
-from gui.base import GuiPage
-from gui.routes import gui_routes
-from gui.session import GuiSession
 from nicegui import ui
+
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 
 
 class SelectProjectPage(GuiPage):
@@ -70,7 +71,9 @@ class SelectProjectPage(GuiPage):
 
                     async def open_manage_projects():
                         """Open the Manage Projects dialog."""
-                        from gui.components.manage_projects import ManageProjectsDialog
+                        from cibmangotree.gui.components.manage_projects import (
+                            ManageProjectsDialog,
+                        )
 
                         dialog = ManageProjectsDialog(session=self.session)
                         result = await dialog

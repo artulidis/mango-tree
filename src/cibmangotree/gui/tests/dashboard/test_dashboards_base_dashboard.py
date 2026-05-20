@@ -1,9 +1,10 @@
 """Behavior tests for gui.dashboards.base_dashboard.BaseDashboardPage."""
 
-from gui.dashboards.base_dashboard import BaseDashboardPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.dashboards.base_dashboard import BaseDashboardPage
+from cibmangotree.gui.session import GuiSession
 
 
 class _StubDashboard(BaseDashboardPage):

@@ -4,14 +4,14 @@ from datetime import datetime
 from unittest.mock import MagicMock
 
 import polars as pl
-from gui.dashboards.hashtags.dashboard import HashtagsDashboardPage
-from gui.dashboards.hashtags.plots import plot_gini_echart
 
 from cibmangotree.analyzers.hashtags.hashtags_base.interface import (
     OUTPUT_COL_GINI,
     OUTPUT_COL_TIMESPAN,
     PRIMARY_OUTPUT_DATETIME_FORMAT,
 )
+from cibmangotree.gui.dashboards.hashtags.dashboard import HashtagsDashboardPage
+from cibmangotree.gui.dashboards.hashtags.plots import plot_gini_echart
 
 
 def test_plot_gini_raw_ts_preserves_seconds() -> None:

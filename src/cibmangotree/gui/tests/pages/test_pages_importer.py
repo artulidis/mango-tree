@@ -1,9 +1,10 @@
 """Behavior tests for gui.pages.importer.ImportDatasetPage."""
 
-from gui.pages.importer import ImportDatasetPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.importer import ImportDatasetPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_import_dataset_page_prompt(user: User, gui_session: GuiSession) -> None:

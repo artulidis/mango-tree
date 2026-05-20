@@ -1,10 +1,11 @@
 """Behavior tests for gui.main_workflow dashboard wiring."""
 
-from gui.dashboards import _DASHBOARD_REGISTRY, PlaceholderDashboard
-from gui.dashboards.ngrams import NgramsDashboardPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.dashboards import _DASHBOARD_REGISTRY, PlaceholderDashboard
+from cibmangotree.gui.dashboards.ngrams import NgramsDashboardPage
+from cibmangotree.gui.session import GuiSession
 
 
 def test_dashboard_registry_maps_ngrams_to_dashboard_page() -> None:

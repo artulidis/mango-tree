@@ -2,12 +2,12 @@ from io import BytesIO
 from traceback import format_exc
 from typing import cast
 
-from gui.base import GuiPage
-from gui.components.import_options import ImportOptionsDialog
-from gui.routes import gui_routes
-from gui.session import GuiSession
 from nicegui import ui
 
+from cibmangotree.gui.base import GuiPage
+from cibmangotree.gui.components.import_options import ImportOptionsDialog
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
 from cibmangotree.importing.csv import CSVImporter
 from cibmangotree.importing.excel import ExcelImporter
 

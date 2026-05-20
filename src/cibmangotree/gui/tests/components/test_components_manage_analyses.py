@@ -1,9 +1,10 @@
 """Behavior tests for gui.components.manage_analyses.ManageAnalysisDialog."""
 
-from gui.components.manage_analyses import ManageAnalysisDialog
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.manage_analyses import ManageAnalysisDialog
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_manage_analyses_dialog_title(

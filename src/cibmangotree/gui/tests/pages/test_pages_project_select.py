@@ -1,9 +1,10 @@
 """Behavior tests for gui.pages.project_select.SelectProjectPage."""
 
-from gui.pages.project_select import SelectProjectPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.project_select import SelectProjectPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_project_select_empty_list_message(

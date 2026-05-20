@@ -2,9 +2,8 @@
 
 from unittest.mock import MagicMock
 
-from gui.context import GUIContext
-
 from cibmangotree.app import App
+from cibmangotree.gui.context import GUIContext
 
 
 def test_gui_context_holds_app_reference() -> None:

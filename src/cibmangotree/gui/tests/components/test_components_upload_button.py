@@ -2,9 +2,10 @@
 
 from unittest.mock import AsyncMock
 
-from gui.components.upload.upload_button import UploadButton
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.components.upload.upload_button import UploadButton
 
 
 async def test_upload_button_shows_label(user: User) -> None:

@@ -3,7 +3,7 @@
 from datetime import datetime, timedelta
 from unittest.mock import MagicMock
 
-from gui.components.analysis_utils import analysis_label, present_timestamp
+from cibmangotree.gui.components.analysis_utils import analysis_label, present_timestamp
 
 
 def test_present_timestamp_just_now() -> None:

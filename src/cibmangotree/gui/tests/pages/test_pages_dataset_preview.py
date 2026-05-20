@@ -2,10 +2,11 @@
 
 from io import BytesIO
 
-from gui.pages.dataset_preview import PreviewDatasetPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.dataset_preview import PreviewDatasetPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_preview_redirects_when_no_file_selected(

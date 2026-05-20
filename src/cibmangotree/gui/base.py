@@ -12,11 +12,12 @@ from contextlib import contextmanager
 from pathlib import Path
 from typing import Callable, Generator
 
-from gui.routes import gui_routes
-from gui.session import GuiSession
-from gui.theme import gui_colors, gui_urls
 from nicegui import ui
 from pydantic import BaseModel, ConfigDict
+
+from cibmangotree.gui.routes import gui_routes
+from cibmangotree.gui.session import GuiSession
+from cibmangotree.gui.theme import gui_colors, gui_urls
 
 
 class GuiPage(BaseModel, abc.ABC):

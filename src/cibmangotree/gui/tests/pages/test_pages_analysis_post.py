@@ -1,9 +1,10 @@
 """Behavior tests for gui.pages.analysis_post.PostAnalysisPage."""
 
-from gui.pages.analysis_post import PostAnalysisPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.analysis_post import PostAnalysisPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_post_analysis_shows_next_steps(

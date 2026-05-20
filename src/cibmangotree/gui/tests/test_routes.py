@@ -1,6 +1,6 @@
 """Behavior tests for gui.routes."""
 
-from gui.routes import GuiRoutes, gui_routes
+from cibmangotree.gui.routes import GuiRoutes, gui_routes
 
 
 def test_gui_routes_default_paths() -> None:

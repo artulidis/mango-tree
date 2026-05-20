@@ -2,8 +2,9 @@
 Placeholder dashboard shown when an analyzer has no dashboard yet.
 """
 
-from gui.session import GuiSession
 from nicegui import ui
+
+from cibmangotree.gui.session import GuiSession
 
 from ..base_dashboard import BaseDashboardPage
 

@@ -1,9 +1,10 @@
 """Behavior tests for gui.pages.analyzer_select.SelectAnalyzerForkPage."""
 
-from gui.pages.analyzer_select import SelectAnalyzerForkPage
-from gui.session import GuiSession
 from nicegui import ui
 from nicegui.testing import User
+
+from cibmangotree.gui.pages.analyzer_select import SelectAnalyzerForkPage
+from cibmangotree.gui.session import GuiSession
 
 
 async def test_analyzer_fork_shows_choice_prompt(
