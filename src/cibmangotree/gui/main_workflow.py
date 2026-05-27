@@ -111,7 +111,9 @@ def gui_main(app: App):
 
     # Launch in native mode
     ui.run(
-        native=True,
+        native=False,
+        host="0.0.0.0",
+        port="8051",
         title="CIB Mango Tree",
         favicon="🥭",
         reload=False,

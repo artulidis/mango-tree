@@ -1,6 +1,7 @@
 from .analysis import AnalysisParamsCard
 from .analysis_utils import analysis_label, present_timestamp
 from .choice_fork import two_button_choice_fork_content
+from .export_outputs import ExportDialog
 from .import_options import ImportOptionsDialog
 from .manage_analyses import ManageAnalysisDialog
 from .manage_projects import ManageProjectsDialog
@@ -17,6 +18,7 @@ __all__ = [
     "ToggleButton",
     "ToggleButtonGroup",
     "AnalysisParamsCard",
+    "ExportDialog",
     "UploadButton",
     "ManageAnalysisDialog",
     "ManageProjectsDialog",
