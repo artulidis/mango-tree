@@ -9,8 +9,8 @@ from nicegui import run, ui
 
 from cibmangotree.app import AnalysisContext, AnalysisOutputContext
 from cibmangotree.gui.theme import MANGO_DARK_GREEN
+from cibmangotree.gui.utils import open_directory_explorer
 from cibmangotree.storage import SupportedOutputExtension
-from cibmangotree.terminal_tools.utils import open_directory_explorer
 
 QUEUE_POLL_INTERVAL = 0.5
 LARGE_OUTPUT_THRESHOLD = 50_000
