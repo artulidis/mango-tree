@@ -2,10 +2,10 @@ import glob
 import os
 import queue
 import threading
-from dataclasses import dataclass
-from typing import Optional
+from typing import Literal
 
 from nicegui import run, ui
+from pydantic import BaseModel
 
 from cibmangotree.app import AnalysisContext, AnalysisOutputContext
 from cibmangotree.gui.theme import MANGO_DARK_GREEN
@@ -16,16 +16,21 @@ QUEUE_POLL_INTERVAL = 0.5
 LARGE_OUTPUT_THRESHOLD = 50_000
 
 
-@dataclass
-class ExportProgressMessage:
-    msg_type: str
-    name: Optional[str] = None
-    index: Optional[int] = None
-    total: Optional[int] = None
-    chunk_progress: Optional[float] = None
-    path: Optional[str] = None
-    chunk_count: Optional[int] = None
-    error: Optional[str] = None
+class ExportProgressMessage(BaseModel):
+    msg_type: Literal[
+        "output_start",
+        "output_progress",
+        "output_finish",
+        "output_error",
+        "all_complete",
+    ]
+    name: str | None = None
+    index: int | None = None
+    total: int | None = None
+    chunk_progress: float | None = None
+    path: str | None = None
+    chunk_count: int | None = None
+    error: str | None = None
 
 
 def _count_chunks(path_pattern: str) -> int:
