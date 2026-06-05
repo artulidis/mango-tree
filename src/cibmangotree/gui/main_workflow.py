@@ -114,9 +114,7 @@ def gui_main(app: App):
     # Launch in native mode on macOS, browser mode on Windows
     is_macos = sys.platform == "darwin"
     ui.run(
-        native=False,
-        host="0.0.0.0",
-        port="8051",
+        native=is_macos,
         title="CIB Mango Tree",
         favicon="🥭",
         reload=False,
