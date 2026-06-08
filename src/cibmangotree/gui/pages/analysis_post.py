@@ -41,7 +41,7 @@ class PostAnalysisPage(GuiPage):
             dialog = ExportDialog(analysis_context=ctx)
             await dialog
 
-        async def _open_results_folder(self):
+        async def _open_results_folder():
             if self.session.current_analysis is None:
                 self.notify_warning("No analysis to open. Run an analysis first.")
                 return
